@@ -1,0 +1,186 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@tailwind screens;
+
+.breath {
+	@apply px-2;
+}
+
+.service-card {
+	@apply flex;
+	@apply flex-col;
+	@apply items-center;
+	@apply justify-center;
+	/* @apply self-start; */
+	@apply my-2;
+}
+
+.service-card-image {
+	/* @apply w-84; */
+	@apply h-56;
+}
+
+.service-card-title {
+	@apply mb-2;
+	@apply text-xl;
+	@apply font-semibold;
+	@apply text-gray-800;
+	@apply text-center;
+}
+
+.service-card-writing {
+	/* @apply w-72; */
+	@apply h-auto;
+
+	@apply pb-4;
+	@apply mx-4;
+
+	@apply -mt-16;
+	@apply pt-4;
+	@apply rounded-lg;
+	@apply overflow-hidden;
+	@apply shadow-xl;
+	@apply bg-white;
+	@apply flex;
+	@apply flex-col;
+	@apply items-center;
+	@apply justify-start;
+}
+
+.service-card-desc {
+	@apply w-full;
+	@apply px-4;
+	@apply text-center;
+	@apply text-sm;
+	@apply text-gray-600;
+	@apply text-justify;
+	@apply overflow-hidden;
+}
+
+.service-card-desc-height {
+	@apply h-16;
+}
+
+.service-card-desc-height-auto {
+	@apply h-auto;
+}
+
+/* .service-card-writing:hover {
+	@apply h-auto;
+} */
+
+.downarrow > * {
+	pointer-events: none;
+}
+
+.section-title {
+	@apply text-3xl;
+	@apply font-display;
+	@apply font-bold;
+	@apply text-gray-800;
+}
+
+.section-sub-heading {
+	@apply text-yellow-600;
+	@apply text-sm;
+	@apply font-semibold;
+}
+
+.whyus-tick-title {
+	@apply text-base;
+}
+
+.partner-logo {
+	/* @apply h-16; */
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+	filter: grayscale(100%);
+}
+
+/* Phone */
+@screen sm {
+	.breath {
+		@apply px-10;
+	}
+
+	.service-card-image {
+		@apply w-full;
+		@apply h-40;
+	}
+
+	.service-card-writing {
+		@apply w-full;
+		/* @apply h-36; */
+	}
+}
+
+/* Tablet Vertical */
+@screen md {
+	.breath {
+		@apply px-10;
+	}
+
+	.service-card-image {
+		@apply w-56;
+		@apply h-40;
+	}
+
+	.service-card-writing {
+		@apply w-48;
+		/* @apply h-36; */
+	}
+}
+
+/* Tablet landscape */
+@screen lg {
+	.breath {
+		@apply px-24;
+	}
+
+	.service-card-image {
+		@apply w-64;
+		@apply h-48;
+	}
+
+	.service-card-writing {
+		@apply w-56;
+		/* @apply h-40; */
+	}
+}
+
+/* Screen less than 1500 */
+@screen xl {
+	.breath {
+		@apply px-56;
+	}
+
+	.service-card-image {
+		@apply w-64;
+		@apply h-48;
+	}
+
+	.service-card-writing {
+		@apply w-56;
+		/* @apply h-40; */
+	}
+}
+
+/* Screen greater than 1500 */
+@screen xxl {
+	.breath {
+		@apply px-96;
+	}
+
+	.service-card-image {
+		@apply w-84;
+		@apply h-56;
+	}
+
+	.service-card-writing {
+		@apply w-72;
+		/* @apply h-72; */
+	}
+}

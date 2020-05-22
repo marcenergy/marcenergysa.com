@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>MARC Energy Solutions</title>
+
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="images/icons/favicon/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="images/icons/favicon/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="images/icons/favicon/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="images/icons/favicon/site.webmanifest" />
+
+		<link rel="stylesheet" href="css/styles.css" />
+
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body class="bg-white font-display">
+		<div
+			class="hidden sm:flex w-full h-12 breath bg-gray-800 text-white justify-between items-center"
+		>
+			<!-- Phone, email, locaiton -->
+			<div class="flex">
+				<!-- <a href="tel:+999 3332 233">
+					<i class="fas fa-phone text-yellow-500 text-xl mr-1"></i>
+					+999 3332 233
+				</a> -->
+				<a href="mailto:email@domain.com" class="ml-4">
+					<i class="fas fa-at text-yellow-500 text-xl mr-1"></i>
+					info@marcenergysa.com
+				</a>
+				<a href="#" class="ml-4 hidden lg:block">
+					<i class="fas fa-map-marker-alt text-yellow-500 text-xl mr-1"></i>
+					7093, Al Asa'adah, Al Nada, 3624 Riyadh, Saudi Arabia
+				</a>
+			</div>
+
+			<!-- Social Links -->
+			<div>
+				<!-- <a href="#"
+					><i class="fab fa-facebook-f text-yellow-500 mr-4 text-xl"></i
+				></a> -->
+				<!-- <a href="#"
+					><i class="fab fa-twitter text-yellow-500 mr-4 text-xl"></i
+				></a> -->
+				<a href="https://www.linkedin.com/company/marc-energy-solutions/"
+					><i class="fab fa-linkedin-in text-yellow-500 mr-4 text-xl"></i
+				></a>
+				<!-- <a href="#"
+					><i class="fab fa-instagram text-yellow-500 mr-4 text-xl"></i
+				></a> -->
+			</div>
+		</div>
+		<header
+			class="w-full breath py-2 sm:flex sm:justify-between sm:items-center bg-gray-100"
+		>
+			<div>
+				<div class="flex items-center justify-between pr-2">
+					<div>
+						<img class="h-20" src="images/logo/logo-white.png" alt="Logo" />
+					</div>
+					<div class="sm:hidden">
+						<button
+							id="toggleBtn"
+							class="block focus:outline-none focus:shadow-none"
+						>
+							<img
+								id="ham"
+								class="h-6 w-6"
+								src="images/icons/zondicons/menu.svg"
+								alt=""
+							/>
+						</button>
+					</div>
+				</div>
+			</div>
+			<div
+				id="togmenu"
+				class="px-2 pt-1 pb-4 hidden sm:pt-0 sm:pb-0 sm:block sm:flex sm:items-center sm:justify-between"
+			>
+				<a
+					id="menulink"
+					href="#services"
+					class="block text-center font-semibold text-gray-900 hover:text-yellow-600 rounded px-2 py-1 mt-1 sm:mt-0 sm:ml-2"
+					>Services</a
+				>
+				<a
+					id="menulink"
+					href="#whyus"
+					class="block text-center font-semibold text-gray-900 hover:text-yellow-600 rounded px-2 py-1 mt-1 sm:mt-0 sm:ml-2"
+					>Why Us</a
+				>
+				<a
+					id="menulink"
+					href="#about"
+					class="block text-center font-semibold text-gray-900 hover:text-yellow-600 rounded px-2 py-1 mt-1 sm:mt-0 sm:ml-2"
+					>About</a
+				>
+				<a
+					id="menulink"
+					href="#contact"
+					class="block text-center font-semibold text-gray-900 hover:text-yellow-600 rounded px-2 py-1 mt-1 sm:mt-0 sm:ml-2"
+					>Contact</a
+				>
+			</div>
+		</header>
+		<main class="w-full">
+			<section
+				id="main"
+				class="h-screen-80 bg-bottom bg-cover flex flex-row items-center justify-center text-center sm:text-left"
+				style="
+					background-image: linear-gradient(
+							rgba(0, 0, 0, 0.5),
+							rgba(0, 0, 0, 0.5)
+						),
+						url('./images/background/chemeng.png');
+				"
+			>
+				<div class="breath w-full flex flex-col items-center sm:items-start">
+					<div class="flex mb-3">
+						<div class="w-8 h-1 rounded-lg bg-yellow-600"></div>
+						<div class="w-3 h-1 ml-1 rounded-lg bg-yellow-600"></div>
+					</div>
+					<h1
+						class="text-3xl sm:text-4xl text-white font-display font-extrabold"
+					>
+						MARC Energy Solutions <br />
+					</h1>
+					<h3 class="mt-3 text-gray-400 text-lg">
+						THE OPTIMUM SOLUTION FOR YOUR ENERGY REQUIREMENTS
+					</h3>
+					<div class="mt-3 text-gray-400 text-sm mb-2">
+						Comprehensive range of design and Engineering Services
+					</div>
+					<a
+						href="#contact"
+						class="inline-block mt-4 bg-yellow-600 px-8 py-2 rounded-full text-white font-semibold shadow-md focus:outline-none"
+					>
+						CONTACT US
+					</a>
+				</div>
+			</section>
+
+			<section id="services" class="breath my-16">
+				<div
+					class="text-center leading-none flex flex-col items-center justify-center"
+				>
+					<p class="section-sub-heading">WHAT WE DO</p>
+					<h1 class="section-title">
+						OUR SERVICES
+					</h1>
+					<!-- Underline -->
+					<div class="flex mt-3">
+						<div class="w-8 h-1 rounded-lg bg-yellow-600"></div>
+						<div class="w-3 h-1 ml-1 rounded-lg bg-yellow-600"></div>
+					</div>
+				</div>
+				<!-- Service cards -->
+				<div
+					class="flex flex-col sm:flex-row flex-wrap items-center sm:items-start justify-around my-4"
+				>
+					<!-- Card1 -->
+					<div class="service-card">
+						<div
+							class="service-card-image rounded-lg overflow-hidden shadow-lg"
+						>
+							<img
+								class="object-cover w-full h-full"
+								src="./images/servies/testing (2).jpg"
+								alt="cable"
+							/>
+						</div>
+						<div class="service-card-writing">
+							<div class="service-card-title">
+								Testing and <br />
+								Commissioning
+							</div>
+							<div
+								id="service-desc1"
+								class="service-card-desc service-card-desc-height"
+							>
+								MARC provides testing and commissioning services to utilities
+								for their protection and control projects. Acceptance testing
+								and commissioning, project management for new installations,
+								retrofits, repairs and maintenance are some of our popular
+								features.
+
+								<div class="mt-4">Relay protection and control</div>
+
+								<ul class="text-left">
+									<li>Functional trip testing</li>
+									<li>SCADA/RTU</li>
+									<li>Metering</li>
+								</ul>
+
+								<div class="mt-4">
+									Acceptance & Maintenance Testing services that ensure the
+									reliability, safety, and optimum operation of electrical power
+									equipment along with services ensure the reliability, safety,
+									and optimum operation of electrical power equipment.
+								</div>
+							</div>
+							<div
+								id="show-service1"
+								class="w-full py-1 text-center cursor-pointer downarrow"
+							>
+								<i class="fas fa-angle-double-down fa-lg"></i>
+							</div>
+						</div>
+					</div>
+					<!-- End Card -->
+
+					<!-- Card2 -->
+					<div class="service-card">
+						<div
+							class="service-card-image rounded-lg overflow-hidden shadow-lg"
+						>
+							<img
+								class="object-cover w-full h-full"
+								src="./images/servies/mv cable (4).jpg"
+								alt="cable"
+							/>
+						</div>
+						<div class="service-card-writing">
+							<div class="service-card-title">
+								Electrical Engineering Services
+							</div>
+							<div
+								id="service-desc2"
+								class="service-card-desc service-card-desc-height"
+							>
+								<div>
+									Electrical Engineering Services from MARC offers a variety of
+									engineering and design services to support utility, generation
+									and industrial customers and their power needs. Power cable
+									laying, testing, termination, splicing up to are some of the
+									segments of the electrical division here at MARC.
+								</div>
+								<div class="mt-4">
+									Fiber optic services
+									<br />
+									We complete aerial and underground fiber optic services
+									including new fiber path splicing, damage repair, section
+									throws, end to end testing, emergency restoration.
+								</div>
+							</div>
+							<div
+								id="show-service2"
+								class="w-full py-1 text-center cursor-pointer downarrow"
+							>
+								<i class="fas fa-angle-double-down fa-lg"></i>
+							</div>
+						</div>
+					</div>
+					<!-- End Card -->
+
+					<!-- Card3 -->
+					<div class="service-card">
+						<div
+							class="service-card-image rounded-lg overflow-hidden shadow-lg"
+						>
+							<img
+								class="object-cover w-full h-full"
+								src="./images/servies/rob-lambert-9Q_pLLP_jmA-unsplash.jpg"
+								alt="cable"
+							/>
+						</div>
+						<div class="service-card-writing">
+							<div class="service-card-title">
+								Industrial Mechanical Maintenance
+							</div>
+							<div
+								id="service-desc3"
+								class="service-card-desc service-card-desc-height"
+							>
+								<div>
+									<div>
+										Maintenance activities such as pipe fabrication and
+										installation of structural steel, modules, modification
+										work, static equipment maintenance, cleaning and repair
+										works, hydro testing, mechanical maintenance, complete
+										service blinds to blinds are part of MARC.
+									</div>
+									<div class="mt-4">
+										Design, procurement, and installation of heavy, medium,
+										light steel structures.
+									</div>
+									<div class="mt-4">
+										HVAC- industrial and building HVAC system construction and
+										maintenance.
+									</div>
+									<div class="mt-4">
+										Fire fitting- industrial and building HVAC system
+										construction and maintenance
+									</div>
+									<div class="mt-4">
+										Pipe spools and pipe supports fabrication and erection
+									</div>
+									<div class="mt-4">
+										Structural steel fabrication and erection
+									</div>
+									<div class="mt-4">Skids fabrication</div>
+									<div class="mt-4">
+										Ladders, platforms, stairs, stairways and hand railing
+									</div>
+									<div class="mt-4">Sand blasting and painting</div>
+									<div class="mt-4">
+										Equipment rental and manpower support can be supplied as per
+										client requirement.
+									</div>
+								</div>
+							</div>
+							<div
+								id="show-service3"
+								class="w-full py-1 text-center cursor-pointer downarrow"
+							>
+								<i class="fas fa-angle-double-down fa-lg"></i>
+							</div>
+						</div>
+					</div>
+					<!-- End Card -->
+
+					<!-- Card4 -->
+					<div class="service-card">
+						<div
+							class="service-card-image rounded-lg overflow-hidden shadow-lg"
+						>
+							<img
+								class="object-cover w-full h-full"
+								src="./images/servies/Transformer oil filteration& testing.jpg"
+								alt="cable"
+							/>
+						</div>
+						<div class="service-card-writing">
+							<div class="service-card-title">
+								Transformer
+								<br />
+								services
+							</div>
+							<div
+								id="service-desc4"
+								class="service-card-desc service-card-desc-height"
+							>
+								<div>
+									Services range from routine inspection, testing and
+									maintenance to a full turnkey replacement of a large power
+									transformer. We also perform bushing replacement, LTC repairs
+									and oil processing. In addition, MARC provides field
+									engineering, assembly, vacuum filling, acceptance testing and
+									commissioning and routine troubleshooting and diagnostics of
+									transformers.
+								</div>
+							</div>
+							<div
+								id="show-service4"
+								class="w-full py-1 text-center cursor-pointer downarrow"
+							>
+								<i class="fas fa-angle-double-down fa-lg"></i>
+							</div>
+						</div>
+					</div>
+					<!-- End Card -->
+
+					<!-- Card5 -->
+					<div class="service-card">
+						<div
+							class="service-card-image rounded-lg overflow-hidden shadow-lg"
+						>
+							<img
+								class="object-cover w-full h-full"
+								src="./images/servies/hpm.jpeg"
+								alt="cable"
+							/>
+						</div>
+						<div class="service-card-writing">
+							<div class="service-card-title">
+								Heavy Plant
+								<br />
+								Machinery
+							</div>
+							<div
+								id="service-desc5"
+								class="service-card-desc service-card-desc-height pb-12"
+							>
+								<div>
+									For hire, sales and the demolition or wrecking of buildings and other structures, the preparation of building sites and the sale of materials from demolished structures. Blasting, test drilling, landfill, levelling, earth-moving, excavating, land drainage and other land preparation.
+
+								</div>
+							</div>
+							<div
+								id="show-service5"
+								class="w-full py-1 text-center cursor-pointer downarrow"
+							>
+								<i class="fas fa-angle-double-down fa-lg"></i>
+							</div>
+						</div>
+					</div>
+					<!-- End Card -->
+				</div>
+			</section>
+
+			<section id="whyus" class="breath my-32 flex items-center justify-center">
+				<div
+					class="w-full h-96 hidden lg:flex rounded-lg overflow-hidden shadow-md"
+				>
+					<img
+						class="w-full h-full object-cover"
+						src="./images/whychooseus.jpg"
+						alt="Why Us"
+					/>
+				</div>
+				<div
+					class="pt-3 w-full px-2 sm:px-10 text-center leading-none flex flex-col items-center justify-center sm:items-start sm:justify-start"
+				>
+					<p class="section-sub-heading w-full text-center sm:text-left">
+						WHO WE ARE
+					</p>
+					<h1 class="section-title w-full text-center sm:text-left">
+						WHY CHOOSE US
+					</h1>
+					<!-- Underline -->
+					<div class="flex mt-3">
+						<div class="w-8 h-1 rounded-lg bg-yellow-600"></div>
+						<div class="w-3 h-1 ml-1 rounded-lg bg-yellow-600"></div>
+					</div>
+
+					<!-- Desc -->
+					<div class="pt-8">
+						<div
+							class="w-full px-2 text-justify text-center sm:text-left text-sm leading-6 text-gray-600"
+							style="text-align: justify;"
+						>
+							<div>
+								With 15 years of experience in the competitive market, customer
+								satisfaction has remained our #1 priority.
+							</div>
+							<div>
+								The MARC team delivers all the services in a manner which adapts
+								to the contractual requirements of its purchasers, and all
+								applicable regulatory authorities.
+							</div>
+							<div>
+								Health, safety, ethical and environment policies that reflects
+								in our ultimate commitment towards social order.
+							</div>
+							<div>
+								Comprehensive range of Engineering and design services with
+								excellent technology and cost-effective solutions in Electrical
+								and Instrumentation sector for both onshore and offshore
+								projects.
+							</div>
+						</div>
+						<div
+							class="w-full px-2 pt-3 text-left text-sm leading-6 text-gray-600"
+						>
+							<div class="flex w-full py-2">
+								<div class="flex w-full">
+									<div class="text-yellow-600 pr-2">
+										<i class="fas fa-check fa-2x"></i>
+									</div>
+									<div class="whyus-tick-title">Experience</div>
+								</div>
+								<div class="flex w-full">
+									<div class="text-yellow-600 pr-2">
+										<i class="fas fa-check fa-2x"></i>
+									</div>
+									<div class="whyus-tick-title">Technology</div>
+								</div>
+							</div>
+
+							<div class="flex w-full py-2">
+								<div class="flex w-full">
+									<div class="text-yellow-600 pr-2">
+										<i class="fas fa-check fa-2x"></i>
+									</div>
+									<div class="whyus-tick-title">Professionality</div>
+								</div>
+								<div class="flex w-full">
+									<div class="text-yellow-600 pr-2">
+										<i class="fas fa-check fa-2x"></i>
+									</div>
+									<div class="whyus-tick-title">Teamwork</div>
+								</div>
+							</div>
+
+							<div class="flex w-full py-2">
+								<div class="flex w-full">
+									<div class="text-yellow-600 pr-2">
+										<i class="fas fa-check fa-2x"></i>
+									</div>
+									<div class="whyus-tick-title">Precision</div>
+								</div>
+								<div class="flex w-full">
+									<div class="text-yellow-600 pr-2">
+										<i class="fas fa-check fa-2x"></i>
+									</div>
+									<div class="whyus-tick-title">Innovation</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section
+				id="servicenumber"
+				class="bg-top"
+				style="
+					background-image: linear-gradient(
+							rgba(0, 0, 0, 0.7),
+							rgba(0, 0, 0, 0.7)
+						),
+						url('./images/background/nightlightworld.jpg');
+				"
+			>
+				<div
+					class="breath py-24 text-white flex flex-col sm:flex-row items-center justify-between"
+				>
+					<div
+						class="w-full flex flex-col items-center justify-center py-12 md:py-0"
+					>
+						<div>
+							<span class="text-5xl font-bold">150</span>
+							<i class="fas fa-plus fa-2x align-top text-yellow-600"></i>
+						</div>
+						<div class="font-semibold">PROJECTS</div>
+					</div>
+
+					<div
+						class="w-full flex flex-col items-center justify-center py-12 md:py-0"
+					>
+						<div>
+							<span class="text-5xl font-bold">100</span>
+							<i class="fas fa-plus fa-2x align-top text-yellow-600"></i>
+						</div>
+						<div class="font-semibold">INSTALLATIONS</div>
+					</div>
+
+					<div
+						class="w-full flex flex-col items-center justify-center py-12 md:py-0"
+					>
+						<div>
+							<span class="text-5xl font-bold">75</span>
+							<i class="fas fa-plus fa-2x align-top text-yellow-600"></i>
+						</div>
+						<div class="font-semibold">MAINTANANCE</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="about" class="breath my-32 flex items-center justify-center">
+				<div
+					class="pt-3 w-full px-2 sm:px-10 text-center leading-none flex flex-col items-center justify-center sm:items-end sm:justify-start"
+				>
+					<p class="section-sub-heading w-full text-center sm:text-right">
+						OUR COMPANY
+					</p>
+					<h1 class="section-title w-full text-center sm:text-right">
+						ABOUT US
+					</h1>
+					<!-- Underline -->
+					<div class="flex mt-3">
+						<div class="w-8 h-1 rounded-lg bg-yellow-600"></div>
+						<div class="w-3 h-1 ml-1 rounded-lg bg-yellow-600"></div>
+					</div>
+
+					<!-- Desc -->
+					<div class="pt-8">
+						<div
+							class="w-full px-2 text-center md:text-right text-sm leading-6 text-gray-600"
+							style="text-align: justify;"
+						>
+							<div>
+								Mansur Sultan Faraj Al Rasheed Contracting Est. deals mainly in
+								substation commissioning, acceptance testing and maintenance
+								services to electrical transmission, distribution, medium
+								voltage cable termination and testing. We provide highly
+								qualified and experienced inspectors and technicians from
+								various trades like Mechanical, Civil, Structural whose
+								expertise are utilized in design, project management,
+								maintenance, testing, pre-commissioning, commissioning and
+								QA/QC.
+							</div>
+							<div class="mt-4">
+								Here at MARC, we take prides not only in the depth of expertise
+								of the trade but the efficiency with which the services are
+								rendered. Operating from a fully equipped facility in Riyadh,
+								KSA, we emphasize on delivering reliable and high-quality
+								services at competitive prices. Quality assurance, essential in
+								maintaining today’s demanding standards, is ensured through
+								rigorous inspection procedures and superior quality control
+								equipment.
+							</div>
+						</div>
+						<!-- <div class="w-full pt-2">
+							<div
+								class="w-full py-2 px-2 text-right flex items-center justify-between md:justify-end"
+							>
+								<div class="pr-2 text-gray-600 sm:text-sm xl:text-base">
+									Lorem ipsum dolor sit amet consectetur.
+								</div>
+								<div class="text-yellow-600">
+									<i class="fas fa-check fa-2x"></i>
+								</div>
+							</div>
+
+							<div
+								class="w-full py-2 px-2 text-right flex items-center justify-between md:justify-end"
+							>
+								<div class="pr-2 text-gray-600 sm:text-sm xl:text-base">
+									Repudiandae sed obcaecati minima vitae.
+								</div>
+								<div class="text-yellow-600">
+									<i class="fas fa-check fa-2x"></i>
+								</div>
+							</div>
+
+							<div
+								class="w-full py-2 px-2 text-right flex items-center justify-between md:justify-end"
+							>
+								<div class="pr-2 text-gray-600 sm:text-sm xl:text-base">
+									Tempora quaerat corporis dolorum?
+								</div>
+								<div class="text-yellow-600">
+									<i class="fas fa-check fa-2x"></i>
+								</div>
+							</div>
+						</div> -->
+					</div>
+				</div>
+
+				<div
+					class="w-full h-96 hidden lg:flex rounded-lg overflow-hidden shadow-md"
+				>
+					<img
+						class="w-full h-full object-cover"
+						src="./images/aboutus.jpg"
+						alt="Why Us"
+					/>
+				</div>
+			</section>
+
+			<!-- <section id="partners" class="hidden md:block bg-gray-200">
+				<div class="breath py-4 flex items-center justify-between">
+					<div class="w-full flex items-center justify-center">
+						<img
+							class="partner-logo"
+							src="images/partners/p1.png"
+							alt="Partner 1"
+						/>
+					</div>
+					<div class="w-full flex items-center justify-center">
+						<img
+							class="partner-logo"
+							src="images/partners/p2.png"
+							alt="Partner 2"
+						/>
+					</div>
+					<div class="w-full flex items-center justify-center">
+						<img
+							class="partner-logo"
+							src="images/partners/p3.png"
+							alt="Partner 3"
+						/>
+					</div>
+					<div class="w-full flex items-center justify-center">
+						<img
+							class="partner-logo"
+							src="images/partners/p4.png"
+							alt="Partner 4"
+						/>
+					</div>
+					<div class="w-full flex items-center justify-center">
+						<img
+							class="partner-logo"
+							src="images/partners/p5.png"
+							alt="Partner 5"
+						/>
+					</div>
+				</div>
+			</section> -->
+		</main>
+		<footer
+			class="w-full bg-gray-900 text-white flex flex-col items-center justify-center"
+		>
+			<div
+				id="contact"
+				class="w-full breath pt-16 flex flex-col items-center justify-center"
+			>
+				<div class="text-3xl font-display font-bold">CONTACT US</div>
+				<!-- Underline -->
+				<div class="flex mt-3">
+					<div class="w-8 h-1 rounded-lg bg-yellow-600"></div>
+					<div class="w-3 h-1 ml-1 rounded-lg bg-yellow-600"></div>
+				</div>
+
+				<!-- Desc -->
+				<div
+					class="w-full md:mt-16 flex flex-col md:flex-row items-center justify-center"
+				>
+					<!-- Info -->
+					<div
+						class="w-full h-full my-12 md:my-0 flex flex-col items-center justify-center"
+					>
+						<div class="">
+							<!-- <a href="#"
+								><i class="fab fa-facebook-f text-yellow-500 mr-4 fa-2x"></i
+							></a>
+							<a href="#"
+								><i class="fab fa-twitter text-yellow-500 mr-4 fa-2x"></i
+							></a> -->
+							<a href="https://www.linkedin.com/company/marc-energy-solutions/"
+								><i class="fab fa-linkedin-in text-yellow-500 mr-4 fa-2x"></i
+							></a>
+							<!-- <a href="#"
+								><i class="fab fa-instagram text-yellow-500 mr-4 fa-2x"></i
+							></a> -->
+						</div>
+
+						<div class="text-xl lg:text-2xl text-left">
+							<div class="mt-6">
+								<a href="mailto:email@domain.com" id="email"
+									>
+									<i class="fas fa-at text-yellow-500 text-xl mr-4"></i>
+									<span>info@marcenergysa.com</span>
+									</a
+								>
+							</div>
+
+							<!-- <div class="mt-6">
+								<i class="fas fa-phone text-yellow-500 text-xl mr-4"></i>
+								<a href="tel:+99988822211" id="phone">+999 3332 233</a>
+							</div> -->
+
+							<div class="mt-6">
+								<i class="fas fa-briefcase text-yellow-500 text-xl mr-4"></i>
+								Mansur Sultan Faraj
+								<div class="ml-10">
+									<div>
+										Al Rasheed
+									</div>
+									<div>
+										Contracting Est.
+									</div>
+									<div>
+										7093, Al Asa'adah, Al Nada, 3624
+									</div>
+									<div>Zip Code: 13317</div>
+									<div>Riyadh, Saudi Arabia</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Map -->
+					<div class="w-full h-72 md:mx-8 rounded-lg overflow-hidden shadow-md">
+						<iframe
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3621.7559510114334!2d46.68385261555635!3d24.80380898408062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2efcc0c319deb5%3A0x2eb1dbd70a69a46c!2s7093%2C%20An%20Nada%2C%20Riyadh%2013317%C2%A03624%2C%20Saudi%20Arabia!5e0!3m2!1sen!2sin!4v1590066849590!5m2!1sen!2sin"
+							frameborder="0"
+							style="border: 0; overflow: hidden; height: 100%; width: 100%;"
+							height="100%"
+							width="100%"
+							allowfullscreen=""
+							aria-hidden="false"
+							tabindex="0"
+						></iframe>
+					</div>
+				</div>
+			</div>
+			<div class="flex items-center justify-center mt-10">
+				<div
+					id="copyright"
+					class="py-8 text-center text-sm md:text-lg flex flex-col md:flex-row justify-center items-center"
+				>
+					<div class="py-1 md:py-0">
+						<span class="text-yellow-400">&copy;&nbsp;</span>Copyright&nbsp;
+						<span id="year"></span>
+						<span class="py-1 md:py-0">MARC Energy Solution.&nbsp;</span>
+					</div>
+					<div class="py-1 md:py-0">All Rights Reserved&nbsp;</div>
+				</div>
+			</div>
+		</footer>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+		<script src="./js/index.js"></script>
+	</body>
+</html>

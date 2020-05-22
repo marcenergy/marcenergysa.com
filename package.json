@@ -1,0 +1,25 @@
+{
+	"name": "marc",
+	"version": "1.0.0",
+	"description": "MARC Energy Solutions website",
+	"scripts": {
+		"clean": "rm dist/ .cache -rf",
+		"watch:css": "postcss src/css/tailwind.css -o src/css/styles.css -w",
+		"build:css": "postcss src/css/tailwind.css -o src/css/styles.css",
+		"start": "parcel src/index.html",
+		"build:parcel": "parcel build src/index.html",
+		"dev": "concurrently --kill-others \"yarn watch:css\" \"yarn start\"",
+		"build": "NODE_ENV=production yarn clean && yarn build:css && yarn build:parcel"
+	},
+	"author": "Ep Sooraj",
+	"license": "ISC",
+	"devDependencies": {
+		"@babel/core": "^7.9.6",
+		"@babel/preset-env": "^7.9.6",
+		"autoprefixer": "^9.7.6",
+		"concurrently": "^5.2.0",
+		"parcel-bundler": "^1.12.4",
+		"postcss-cli": "^7.1.1",
+		"tailwindcss": "^1.4.6"
+	}
+}
