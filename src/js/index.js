@@ -45,6 +45,9 @@ document
 document
 	.getElementById("show-service5")
 	.addEventListener("click", toggleServiceDesc);
+document
+	.getElementById("show-service6")
+	.addEventListener("click", toggleServiceDesc);
 
 function toggleServiceDesc(event) {
 	const arrowdiv = event.currentTarget.id;

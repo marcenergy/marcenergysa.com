@@ -6,6 +6,14 @@
 
 @tailwind screens;
 
+.list-square {
+	list-style-type: square;
+}
+
+.list-arrow {
+	list-style-type: "→ ";
+}
+
 .breath {
 	@apply px-2;
 }
@@ -95,9 +103,11 @@
 }
 
 .partner-logo {
-	/* @apply h-16; */
-	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-	filter: grayscale(100%);
+	@apply px-0;
+	@apply py-2;
+	/* @apply max-w-sm; */
+	/* -webkit-filter: grayscale(100%); */
+	/* filter: grayscale(100%); */
 }
 
 /* Phone */
@@ -148,6 +158,10 @@
 	.service-card-writing {
 		@apply w-56;
 		/* @apply h-40; */
+	}
+
+	.partner-logo {
+		@apply px-4;
 	}
 }
 

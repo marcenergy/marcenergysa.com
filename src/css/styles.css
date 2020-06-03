@@ -123105,6 +123105,14 @@ video {
   }
 }
 
+.list-square {
+  list-style-type: square;
+}
+
+.list-arrow {
+  list-style-type: "→ ";
+}
+
 .breath {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -123206,9 +123214,13 @@ video {
 }
 
 .partner-logo {
-  /* @apply h-16; */
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%);
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  /* @apply max-w-sm; */
+  /* -webkit-filter: grayscale(100%); */
+  /* filter: grayscale(100%); */
 }
 
 /* Phone */
@@ -123265,6 +123277,11 @@ video {
   .service-card-writing {
     width: 14rem;
     /* @apply h-40; */
+  }
+
+  .partner-logo {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
